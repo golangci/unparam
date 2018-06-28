@@ -21,12 +21,12 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/golangci/go-tools/ssa"
+	"github.com/golangci/go-tools/ssa/ssautil"
 	"golang.org/x/tools/go/callgraph"
 	"golang.org/x/tools/go/callgraph/cha"
 	"golang.org/x/tools/go/callgraph/rta"
 	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
 
 	"github.com/kisielk/gotool"
 	"mvdan.cc/lint"
@@ -74,9 +74,6 @@ type Checker struct {
 }
 
 var (
-	_ lint.Checker = (*Checker)(nil)
-	_ lint.WithSSA = (*Checker)(nil)
-
 	errorType    = types.Universe.Lookup("error").Type()
 	unknownConst = constant.MakeUnknown()
 )
