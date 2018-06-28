@@ -133,6 +133,16 @@ func (c *Checker) ProgramSSA(prog *ssa.Program) {
 	c.prog = prog
 }
 
+// Algo supplies Checker with the call graph construction algorithm.
+func (c *Checker) Algo(algo string) {
+	c.algo = algo
+}
+
+// Algo supplies Checker with the exported setting.
+func (c *Checker) Exported(exported bool) {
+	c.exported = exported
+}
+
 func (c *Checker) debug(format string, a ...interface{}) {
 	if c.debugLog != nil {
 		fmt.Fprintf(c.debugLog, format, a...)
