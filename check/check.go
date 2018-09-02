@@ -21,9 +21,9 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/tools/go/callgraph"
-	"golang.org/x/tools/go/callgraph/cha"
-	"golang.org/x/tools/go/callgraph/rta"
+	"github.com/golangci/tools/go/callgraph"
+	"github.com/golangci/tools/go/callgraph/cha"
+	"github.com/golangci/tools/go/callgraph/rta"
 	"golang.org/x/tools/go/loader"
 	"github.com/golangci/tools/go/ssa"
 	"github.com/golangci/tools/go/ssa/ssautil"
