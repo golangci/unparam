@@ -25,8 +25,8 @@ import (
 	"golang.org/x/tools/go/callgraph/cha"
 	"golang.org/x/tools/go/callgraph/rta"
 	"golang.org/x/tools/go/loader"
-	"golang.org/x/tools/go/ssa"
-	"golang.org/x/tools/go/ssa/ssautil"
+	"github.com/golangci/tools/go/ssa"
+	"github.com/golangci/tools/go/ssa/ssautil"
 
 	"github.com/kisielk/gotool"
 	"mvdan.cc/lint"
