@@ -29,7 +29,7 @@ import (
 	"github.com/golangci/tools/go/ssa/ssautil"
 
 	"github.com/kisielk/gotool"
-	"mvdan.cc/lint"
+	"github.com/golangci/lint"
 )
 
 // UnusedParams returns a list of human-readable issues that point out unused
